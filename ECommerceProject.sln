@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceProject", "ECommerceProject\ECommerceProject.csproj", "{4CDC28A2-3B92-4ADF-8BC0-FE5D81133A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{BE0A5E04-9CFA-4D41-86D9-4966B0152878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{ABC22BCA-20ED-4BF0-B5A5-6D7F0003FABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CDC28A2-3B92-4ADF-8BC0-FE5D81133A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDC28A2-3B92-4ADF-8BC0-FE5D81133A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDC28A2-3B92-4ADF-8BC0-FE5D81133A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDC28A2-3B92-4ADF-8BC0-FE5D81133A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0A5E04-9CFA-4D41-86D9-4966B0152878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0A5E04-9CFA-4D41-86D9-4966B0152878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0A5E04-9CFA-4D41-86D9-4966B0152878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0A5E04-9CFA-4D41-86D9-4966B0152878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC22BCA-20ED-4BF0-B5A5-6D7F0003FABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC22BCA-20ED-4BF0-B5A5-6D7F0003FABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC22BCA-20ED-4BF0-B5A5-6D7F0003FABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC22BCA-20ED-4BF0-B5A5-6D7F0003FABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4021B2D-D584-4A44-A846-27A61D2CAC29}
+	EndGlobalSection
+EndGlobal

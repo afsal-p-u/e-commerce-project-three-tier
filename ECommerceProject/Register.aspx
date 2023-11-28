@@ -93,7 +93,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Address"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" TextMode="MultiLine"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

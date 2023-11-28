@@ -67,11 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.html" />
-    <Content Include="blog-details.html" />
-    <Content Include="blog.html" />
-    <Content Include="checkout.html" />
-    <Content Include="contact.html" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\elegant-icons.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -167,13 +162,10 @@
     <Content Include="js\mixitup.min.js" />
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="main.html" />
     <Content Include="MainPage.aspx" />
-    <Content Include="readme.txt" />
+    <Content Include="ProductsPage.aspx" />
+    <Content Include="ProductViewPage.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="shop-details.html" />
-    <Content Include="shop.html" />
-    <Content Include="shopping-cart.html" />
     <Content Include="UserPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -184,6 +176,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsPage.aspx.cs">
+      <DependentUpon>ProductsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsPage.aspx.designer.cs">
+      <DependentUpon>ProductsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductViewPage.aspx.cs">
+      <DependentUpon>ProductViewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductViewPage.aspx.designer.cs">
+      <DependentUpon>ProductViewPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="SecondaryMaster.Master.cs">
       <DependentUpon>SecondaryMaster.Master</DependentUpon>
@@ -282,6 +288,9 @@
       <Project>{be0a5e04-9cfa-4d41-86d9-4966b0152878}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

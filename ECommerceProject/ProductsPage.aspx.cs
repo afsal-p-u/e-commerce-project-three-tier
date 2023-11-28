@@ -9,15 +9,17 @@ using BLL;
 
 namespace ECommerceProject
 {
-    public partial class UserPage : System.Web.UI.Page
+    public partial class ProductsPage : System.Web.UI.Page
     {
-        UserPageBLL obj = new UserPageBLL();
+        ProductsPageBLL obj = new ProductsPageBLL();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                DataSet ds = obj.getItems();
+                string id = Request.QueryString["id"];
+                DataSet ds = obj.getCategoryProducts(id);
+
                 DataList1.DataSource = ds;
                 DataList1.DataBind();
             }
@@ -26,8 +28,8 @@ namespace ECommerceProject
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
             int itemIndex = e.Item.ItemIndex;
-            Label lbl = DataList1.Items[itemIndex].FindControl("label3") as Label;
-            Response.Redirect("ProductsPage.aspx?id=" + lbl.Text + "");
+            Label lbl = DataList1.Items[itemIndex].FindControl("label6") as Label;
+            Response.Redirect("ProductViewPage.aspx?id=" + lbl.Text + "");
         }
     }
 }

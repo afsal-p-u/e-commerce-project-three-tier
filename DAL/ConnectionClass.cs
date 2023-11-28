@@ -37,5 +37,23 @@ namespace DAL
 
             return i;
         }
+
+        public SqlDataReader FnDataReader(string sqlQuery)
+        {
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            con.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            return dr;
+        }
+
+        public DataSet FnDataAdapter(string sqlQuery)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(sqlQuery, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+
+            return ds;
+        }
     }
 }

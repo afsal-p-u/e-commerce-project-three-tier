@@ -163,6 +163,13 @@
     <!-- Banner Section End -->
 
     <!-- Product Section Begin -->
+
+
+        <div class="mt-5 mb-5" style="height: 100vh;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
     
     <!-- Product Section End -->
 
@@ -378,10 +385,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
-
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        
     </form>
 </body>
 </html>

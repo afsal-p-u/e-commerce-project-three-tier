@@ -11,7 +11,7 @@ namespace ECommerceProject
 {
 
 
-    public partial class UserPage
+    public partial class ProductsPage
     {
 
         /// <summary>

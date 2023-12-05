@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCategoryItemPageAdmin.aspx" />
+    <Content Include="AddProductPageAdmin.aspx" />
+    <Content Include="CategoryAdminPage.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\elegant-icons.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -163,6 +166,7 @@
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="MainPage.aspx" />
+    <Content Include="ProductsAdminPage.aspx" />
     <Content Include="ProductsPage.aspx" />
     <Content Include="ProductViewPage.aspx" />
     <Content Include="Register.aspx" />
@@ -170,12 +174,47 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCategoryItemPageAdmin.aspx.cs">
+      <DependentUpon>AddCategoryItemPageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCategoryItemPageAdmin.aspx.designer.cs">
+      <DependentUpon>AddCategoryItemPageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductPageAdmin.aspx.cs">
+      <DependentUpon>AddProductPageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProductPageAdmin.aspx.designer.cs">
+      <DependentUpon>AddProductPageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryAdminPage.aspx.cs">
+      <DependentUpon>CategoryAdminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryAdminPage.aspx.designer.cs">
+      <DependentUpon>CategoryAdminPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsAdminPage.aspx.cs">
+      <DependentUpon>ProductsAdminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsAdminPage.aspx.designer.cs">
+      <DependentUpon>ProductsAdminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductsPage.aspx.cs">
       <DependentUpon>ProductsPage.aspx</DependentUpon>
@@ -247,6 +286,7 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="SecondaryMaster.Master" />
+    <Content Include="AdminMaster.Master" />
     <None Include="packages.config" />
     <Content Include="sass\style.scss" />
     <Content Include="sass\_about.scss" />

@@ -18,8 +18,17 @@ namespace DAL
             con = new SqlConnection(@"server=DESKTOP-G3OE425\SQLEXPRESS;database=ECommerceProject;Integrated Security=true");
         }
 
+        public void ConnectionControl()
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+
         public int FnExecuteNonQuery(string sqlQuery)
         {
+            ConnectionControl();
             cmd = new SqlCommand(sqlQuery, con);
             con.Open();
             int i = cmd.ExecuteNonQuery();
@@ -30,6 +39,7 @@ namespace DAL
 
         public string FnExecuteScalar(string sqlQuery)
         {
+            ConnectionControl();
             cmd = new SqlCommand(sqlQuery, con);
             con.Open();
             string i = cmd.ExecuteScalar().ToString();
@@ -40,6 +50,7 @@ namespace DAL
 
         public SqlDataReader FnDataReader(string sqlQuery)
         {
+            ConnectionControl();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -49,6 +60,7 @@ namespace DAL
 
         public DataSet FnDataAdapter(string sqlQuery)
         {
+            ConnectionControl();
             SqlDataAdapter da = new SqlDataAdapter(sqlQuery, con);
             DataSet ds = new DataSet();
             da.Fill(ds);

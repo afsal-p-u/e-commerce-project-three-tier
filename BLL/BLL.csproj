@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCategoryPageBBL.cs" />
+    <Compile Include="AdminProductsPageBLL.cs" />
     <Compile Include="Auth.cs" />
     <Compile Include="ProductsPageBLL.cs" />
     <Compile Include="ProductViewPageBLL.cs" />

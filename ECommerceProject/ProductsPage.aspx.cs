@@ -9,12 +9,12 @@ using BLL;
 
 namespace ECommerceProject
 {
-    public partial class ProductsPage : System.Web.UI.Page
-    {
-        ProductsPageBLL obj = new ProductsPageBLL();
+	public partial class ProductsPage : System.Web.UI.Page
+	{
+		ProductsPageBLL obj = new ProductsPageBLL();
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
+		protected void Page_Load(object sender, EventArgs e)
+		{
             if (!IsPostBack)
             {
                 string id = Request.QueryString["id"];
@@ -28,7 +28,7 @@ namespace ECommerceProject
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
         {
             int itemIndex = e.Item.ItemIndex;
-            Label lbl = DataList1.Items[itemIndex].FindControl("label6") as Label;
+            Label lbl = DataList1.Items[itemIndex].FindControl("label5") as Label;
             Response.Redirect("ProductViewPage.aspx?id=" + lbl.Text + "");
         }
     }

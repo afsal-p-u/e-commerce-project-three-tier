@@ -71,7 +71,9 @@
             <td>
                 <asp:FileUpload ID="FileUpload1" runat="server" />
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FileUpload1" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>

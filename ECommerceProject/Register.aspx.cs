@@ -19,12 +19,13 @@ namespace ECommerceProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-           int i =  obj.registerAcoount(TextBox1.Text, TextBox2.Text, TextBox3.Text, Convert.ToInt32(TextBox4.Text), TextBox5.Text, TextBox6.Text);
+            int i = obj.registerAcoount(TextBox1.Text, TextBox2.Text, TextBox6.Text, Convert.ToInt32(TextBox5.Text), TextBox4.Text, TextBox3.Text);
 
-           if (i != 0)
+            if (i != 0)
             {
-                Response.Redirect("");
-            } else
+                Response.Redirect("Login.aspx");
+            }
+            else
             {
                 Label8.Visible = true;
                 Label8.Text = "Registration failed due to some error.";

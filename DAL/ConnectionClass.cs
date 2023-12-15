@@ -15,7 +15,7 @@ namespace DAL
 
         public ConnectionClass()
         {
-            con = new SqlConnection(@"server=DESKTOP-G3OE425\SQLEXPRESS;database=ECommerceProject;Integrated Security=true");
+            con = new SqlConnection(@"server=AFSAL\SQLEXPRESS;database=ECommerceProject;Integrated Security=true");
         }
 
         public void ConnectionControl()

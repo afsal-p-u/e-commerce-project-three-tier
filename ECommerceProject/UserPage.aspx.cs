@@ -18,8 +18,15 @@ namespace ECommerceProject
             if (!IsPostBack)
             {
                 DataSet ds = obj.getItems();
-                DataList1.DataSource = ds;
-                DataList1.DataBind();
+
+                if (ds.Tables[0] != null)
+                {
+                    DataList1.DataSource = ds;
+                    DataList1.DataBind();
+                } else
+                {
+                    Label1.Text = "No categories available";
+                }
             }
         }
 

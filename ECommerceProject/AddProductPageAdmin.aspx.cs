@@ -22,7 +22,7 @@ namespace ECommerceProject
                 DataSet ds = obj.FnGetCategories();
                 DropDownList2.DataSource = ds;
                 DropDownList2.DataTextField = "name";
-                DropDownList2.DataValueField = "category_id";
+                DropDownList2.DataValueField = "id";
                 DropDownList2.DataBind();
             }
         }
@@ -31,6 +31,7 @@ namespace ECommerceProject
         {
             string image = "~/Images/" + FileUpload1.FileName;
             FileUpload1.SaveAs(MapPath(image));
+
             int i = obj2.FnAddProduct(Convert.ToInt32(DropDownList2.SelectedItem.Value), TextBox1.Text, TextBox2.Text, image, Convert.ToInt32(TextBox3.Text), DropDownList1.SelectedItem.Value);
 
             if (i != 0)

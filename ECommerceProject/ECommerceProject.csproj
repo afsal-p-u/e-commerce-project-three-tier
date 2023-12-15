@@ -330,6 +330,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>

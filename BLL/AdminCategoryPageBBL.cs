@@ -29,7 +29,7 @@ namespace BLL
 
         public DataSet FnGetCategories()
         {
-            string query = "select category_id, name from Category";
+            string query = "select id, name from Category";
             DataSet ds = obj.FnDataAdapter(query);
             return ds;
         }

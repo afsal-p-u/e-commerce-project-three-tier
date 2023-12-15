@@ -7,7 +7,18 @@
     .auto-style4 {
         width: 236px;
     }
-</style>
+        .auto-style5 {
+            width: 236px;
+            height: 26px;
+        }
+        .auto-style6 {
+            width: 182px;
+            height: 26px;
+        }
+        .auto-style7 {
+            height: 26px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="w-100">
@@ -160,15 +171,15 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style4">&nbsp;</td>
-            <td class="auto-style3">
+            <td class="auto-style5"></td>
+            <td class="auto-style6">
                 <asp:Label ID="Label7" runat="server" Text="Password"></asp:Label>
             </td>
-            <td>
+            <td class="auto-style7">
                 <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style7"></td>
+            <td class="auto-style7"></td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>

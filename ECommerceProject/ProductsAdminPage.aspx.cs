@@ -24,8 +24,11 @@ namespace ECommerceProject
         public void FnDataBind()
         {
             DataSet ds = obj.getAllProducts();
-            GridView1.DataSource = ds;
-            GridView1.DataBind();
+            if (ds.Tables[0] != null)
+            {
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+            }
         }
 
         protected void GridView1_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)

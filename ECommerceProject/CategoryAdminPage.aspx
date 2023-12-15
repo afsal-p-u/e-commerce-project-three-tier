@@ -20,7 +20,7 @@
         <tr>
             <td class="auto-style1">&nbsp;</td>
             <td class="auto-style2">
-                <asp:Button ID="Button1" runat="server" Text="Add Category" />
+                <asp:Button ID="Button1" runat="server" Text="Add Category" PostBackUrl="~/AddCategoryItemPageAdmin.aspx" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

@@ -44,7 +44,7 @@
         <tr>
             <td class="auto-style9"></td>
             <td class="auto-style10">
-                <asp:Button ID="Button1" runat="server" Text="Add Products" />
+                <asp:Button ID="Button1" runat="server" Text="Add Products" PostBackUrl="~/AddProductPageAdmin.aspx" />
             </td>
             <td class="auto-style11">
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
@@ -60,7 +60,7 @@
         <tr>
             <td class="auto-style4">&nbsp;</td>
             <td class="auto-style2">
-                <asp:GridView ID="GridView1" runat="server" DataKeyNames="product_id" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnSelectedIndexChanging="GridView1_SelectedIndexChanging">
+                <asp:GridView ID="GridView1" runat="server" DataKeyNames="id" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnSelectedIndexChanging="GridView1_SelectedIndexChanging">
                     <Columns>
                         <asp:CommandField HeaderText="Select" ShowSelectButton="True" />
                         <asp:CommandField HeaderText="Delete" ShowDeleteButton="True" />

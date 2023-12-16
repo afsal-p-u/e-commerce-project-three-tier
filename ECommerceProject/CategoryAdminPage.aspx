@@ -22,7 +22,9 @@
             <td class="auto-style2">
                 <asp:Button ID="Button1" runat="server" Text="Add Category" PostBackUrl="~/AddCategoryItemPageAdmin.aspx" />
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
@@ -34,8 +36,10 @@
         <tr>
             <td class="auto-style1">&nbsp;</td>
             <td class="auto-style2">
-                <asp:GridView ID="GridView1" runat="server" Width="374px">
+                <asp:GridView ID="GridView1" runat="server" Width="475px" DataKeyNames="id" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating">
                     <Columns>
+                        <asp:CommandField HeaderText="Edit" ShowEditButton="True" />
+                        <asp:CommandField HeaderText="Delete" ShowDeleteButton="True" />
                         <asp:ImageField DataImageUrlField="image" HeaderText="Image">
                             <ControlStyle Height="200px" Width="200px" />
                         </asp:ImageField>

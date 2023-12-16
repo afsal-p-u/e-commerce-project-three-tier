@@ -41,7 +41,10 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="CategoryAdminPage.aspx">Categories</a></li>
+                            <li><a href="AddCategoryItemPageAdmin.aspx">Add Category</a></li>
+                            <li><a href="ProductsAdminPage.aspx">Products</a></li>
+                            <li><a href="AddProductPageAdmin.aspx">Add Product</a></li>
                         </ul>
                     </nav>
                 </div>

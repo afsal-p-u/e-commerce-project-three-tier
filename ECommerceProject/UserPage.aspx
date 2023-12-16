@@ -71,7 +71,7 @@
                     <table class="w-100">
                         <tr>
                             <td class="auto-style7">
-                                <asp:ImageButton ID="ImageButton1" runat="server" Height="132px" Width="162px" />
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="132px" Width="162px" ImageUrl='<%# Eval("image") %>' />
                             </td>
                         </tr>
                         <tr>
@@ -81,7 +81,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style7">
-                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("category_id") %>' Visible="False"></asp:Label>
+                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("id") %>' Visible="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>

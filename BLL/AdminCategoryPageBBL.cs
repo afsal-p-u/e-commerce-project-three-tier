@@ -33,5 +33,19 @@ namespace BLL
             DataSet ds = obj.FnDataAdapter(query);
             return ds;
         }
+
+        public int FnDeleteCategory(int id)
+        {
+            string query = "delete from Category where id="+id+"";
+            int i = obj.FnExecuteNonQuery(query);
+            return i;
+        }
+
+        public int FnUpdateCategory(int id, string name)
+        {
+            string query = "update Category set name='"+name+"' where id=" + id + "";
+            int i = obj.FnExecuteNonQuery(query);
+            return i;
+        }
     }
 }

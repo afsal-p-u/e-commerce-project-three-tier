@@ -39,7 +39,9 @@
             <td>
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -55,7 +57,9 @@
             <td>
                 <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -71,7 +75,9 @@
             <td>
                 <asp:FileUpload ID="FileUpload1" runat="server" />
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FileUpload1" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -87,7 +93,9 @@
             <td>
                 <asp:TextBox ID="TextBox3" runat="server" TextMode="Number"></asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="RangeValidator" MaximumValue="3000" MinimumValue="1000"></asp:RangeValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -106,7 +114,9 @@
                     <asp:ListItem>Not Available</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DropDownList1" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -123,7 +133,9 @@
                 <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True">
                 </asp:DropDownList>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DropDownList2" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>

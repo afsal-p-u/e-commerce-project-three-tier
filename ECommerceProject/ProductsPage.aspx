@@ -36,7 +36,7 @@
                         <table class="w-100">
                             <tr>
                                 <td>
-                                    <asp:ImageButton ID="ImageButton1" runat="server" Height="127px" Width="191px" />
+                                    <asp:ImageButton ID="ImageButton1" runat="server" Height="127px" Width="191px" ImageUrl='<%# Eval("image") %>' />
                                 </td>
                             </tr>
                             <tr>
@@ -61,7 +61,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("product_id") %>'></asp:Label>
+                                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("id") %>' Visible="False"></asp:Label>
                                 </td>
                             </tr>
                         </table>

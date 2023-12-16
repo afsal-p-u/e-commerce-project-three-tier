@@ -34,8 +34,8 @@ namespace ECommerceProject
         protected void GridView1_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
             GridViewRow row = GridView1.Rows[e.NewSelectedIndex];
-            Label1.Text = row.Cells[5].Text;
-            Label2.Text = row.Cells[6].Text;
+            //Label1.Text = row.Cells[5].Text;
+            //Label2.Text = row.Cells[6].Text;
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -64,7 +64,6 @@ namespace ECommerceProject
             int id = e.RowIndex;
             int getId = Convert.ToInt32(GridView1.DataKeys[id].Value);
             TextBox txtName = (TextBox)GridView1.Rows[id].Cells[6].Controls[0];
-            Label1.Text = txtName.Text;
             int i = obj.updateProduct(getId, txtName.Text);
             GridView1.EditIndex = -1;
             FnDataBind();

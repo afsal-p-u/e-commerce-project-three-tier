@@ -24,6 +24,7 @@ namespace ECommerceProject
 
                 while (dr.Read())
                 {
+                    Image1.ImageUrl = dr["image"].ToString();
                     Label1.Text = dr["name"].ToString();
                     Label2.Text = dr["description"].ToString();
                     Label3.Text = dr["price"].ToString();

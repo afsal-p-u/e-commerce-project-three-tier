@@ -15,7 +15,7 @@ namespace BLL
 
         public SqlDataReader getSingleProduct(string id)
         {
-            string query = "select * from Product where product_id=" + Convert.ToInt32(id) + "";
+            string query = "select * from Product where id=" + Convert.ToInt32(id) + "";
             SqlDataReader dr = obj.FnDataReader(query);
             return dr;
         }

@@ -23,9 +23,6 @@ namespace ECommerceProject
         {
             string s = obj.FnLoginAccount(TextBox1.Text, TextBox2.Text);
 
-            Label4.Visible = true;
-            Label4.Text = s;
-
             if (s != "0")
             {
                 SqlDataReader dr = obj.FnUserType(TextBox1.Text, TextBox2.Text);

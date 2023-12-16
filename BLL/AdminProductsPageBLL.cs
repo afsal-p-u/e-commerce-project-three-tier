@@ -21,14 +21,14 @@ namespace BLL
         }
         public int deleteProduct(int id)
         {
-            string query = "delete from Product where product_id=" + id+"";
+            string query = "delete from Product where id=" + id+"";
             int i = obj.FnExecuteNonQuery(query);
             return i;
         }
 
         public int updateProduct(int id, string name)
         {
-            string query = "update Product set name='"+name+"' where product_id=" + id + "";
+            string query = "update Product set name='"+name+"' where id=" + id + "";
             int i = obj.FnExecuteNonQuery(query);
             return i;
         }
